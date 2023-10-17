@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in & Sign up Form</title>
+    <link rel="stylesheet" href="css/LogE.css" />
+    <link
+  href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+  rel="stylesheet"
+/>
+  </head>
+  <body>
+
+
+    <main>
+      <div class="box">
+        <div class="inner-box" >
+            
+          <div class="forms-wrap">
+            <form action="logE_signin.php" class="form sign-in-form" method="post" id="forme" >
+              
+              <div class="logo">
+                <a class="navbar-brand" href="index.html">WeJoB.</a>
+              </div>
+
+              <div class="heading">
+                <h2>Welcome Back</h2>
+                <h6>Not registred yet?</h6>
+                <a href="#" class="toggle">Sign up</a>
+              </div>
+
+              
+              <div class="actual-form">
+               
+                
+
+                <div id="check">
+                <div class="input-wrap" >
+                  <input
+                    type="text"
+                    minlength="4"
+                    class="input-field"
+                   
+                    required
+                    name="pseudo"
+                    id="pseudo1"
+                  />
+                  <label>Pseudo</label>
+                  <small>error msg</small>
+                
+                </div>
+
+                <div class="input-wrap" >
+                  <input
+                    type="password"
+                    minlength="4"
+                    class="input-field"
+                    
+                    required
+                    name="password"
+                    id="password1"
+                  />
+
+                  <label>Password</label>
+                  <small>error msg</small>
+
+                </div>
+                </div>
+
+                <input type="submit" class="btn btn-main" name="submit" value="Sign In" />
+               
+                
+              </div>
+            </form>
+
+            <form action="logE_signup.php"class="form sign-up-form" method="post" id="forme1">
+              <div class="logo">
+                <a class="navbar-brand" href="index.html">WeJoB.</a>
+                
+              </div>
+
+              <div class="heading">
+                <h2>Get Started</h2>
+                <h6>Already have an account?</h6>
+                <a href="#" class="toggle" >Sign in</a>
+              </div>
+
+              
+              <div class="actual-form">
+
+                <div id="check2">
+                <div class="input-wrap">
+                  <input type="text" minlength="4" class="input-field" name="cname" id="cname" required  />
+                  <label>Company Name</label>
+                  <small>error msg</small>
+                </div>
+                <div class="input-wrap">
+                    <input type="text" minlength="4" class="input-field" name="ceoname" id="ceoname" required  />
+                  <label>CEO's Full Name</label>
+                  <small>error msg</small>
+                </div>
+                <div class="input-wrap">
+                  <input type="email" minlength="4" class="input-field" name="ceoemail" id="ceoemail" required />
+                <label>CEO's Email</label>
+                <small>error msg</small>
+                </div>
+                <div class="input-wrap">
+                    <input type="text" minlength="4" class="input-field" name="code" id="code" required onkeypress="return isValidCode(event)" />
+                  <label>Code</label>
+                  <small>error msg</small>
+                </div>
+                
+                
+                <div class="input-wrap">
+                  <input type="text" minlength="4" class="input-field" name="pseudo" id="pseudo" required />
+                <label>Pseudo</label>
+                <small>error msg</small>
+              </div>
+
+                <div class="input-wrap">
+                    <input type="password" minlength="4" class="input-field" name="password" id="password" required />
+                  <label>Password</label>
+                  <small>error msg</small>
+                </div>
+                </div>
+                
+               
+                <input type="submit" value="Sign Up" class="btn btn-main" name="submit" id="button2" />
+                
+            
+              </div>
+            </form>
+          </div>
+
+          <div class="carousel">
+            <div class="images-wrapper">
+              <img src="img/cv.jpeg" class="image img-1 show" alt="" />
+              <img src="img/find.jpeg" class="image img-2" alt="" />
+              <img src="img/res.jpg" class="image img-3" alt="" />
+            </div>
+
+            <div class="text-slider">
+              <div class="text-wrap">
+                <div class="text-group">
+                  <h2>Apply For Your Dream Job</h2>
+                  <h2>Find Employees</h2>
+                  <h2>Get Your Result</h2>
+                </div>
+              </div>
+
+              <div class="bullets">
+                <span class="active" data-value="1"></span>
+                <span data-value="2"></span>
+                <span data-value="3"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Javascript file -->
+
+    <script src="js/LogE.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

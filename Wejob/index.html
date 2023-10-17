@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/line-icons.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>WeJoB.</title>
+  </head>
+
+
+  <body data-bs-spy="scroll" data-bs-target=".navbar">
+    <!--navbar-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white"  data-aos="fade-down">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">WeJoB.</a>
+        <button class="navbar-toggler"type="button"  data-bs-toggle="collapse"  data-bs-target="#navbarNav"  aria-controls="navbarNav"  aria-expanded="false"  aria-label="Toggle navigation" >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">How It Works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Our Partners</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reviews">Reviews</a>
+            </li>
+          </ul>
+          <div class="text-center">
+            <button type="button" class="btn btn-main rounded-oill" onclick="openPopup()" aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+              Login
+            </button>
+
+            <div class="popup glass" id="popup">
+              <div class="popup-header">
+              <h1>Who Are You ?</h1>
+              <button type="close" class="close-button" onclick="closePopup()">&times;</button>
+              </div>
+              <div class="popup-body">
+                <div class="container">
+                    <div class="row">
+                      <div class="col-md-6 ">                        
+                      
+                          <button type=" button" class="btn1 btn-main1">
+                            <a href="LogE.html">
+                              <i class="iconp icon-envelope "></i>  
+                            <br>Employer 
+                            </a>
+                          </button>
+                                          
+                      </div>
+                      <div class="col-md-6">
+                        <button  type=" button" class="btn1 btn-main1">
+                          <a href="LogDe.html">
+                            <i class="iconp icon-profile-male "></i> 
+                              <br>Seeker
+                          </a>
+                        </button>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--hero-->
+    <section
+      id="home"
+      class="bg-cover hero-section"
+      style="background-image: url(img/header.jpg)"
+    >
+      <div class="overlay"></div>
+      <div class="container text-white text-center">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="display-4" data-aos="zoom-in">
+              Find Every Job<br />
+              in One Platform
+            </h1>
+            <p class="my-4" data-aos="fade-up">
+              With WeJoB you can search millions of jobs online <br />
+              to find the next step in your career.
+            </p>
+          </div>
+        </div>
+        <div class="row ">
+
+            
+            <div class="form-group col-md-4">
+              <input
+                type="text"
+                class="form-control"
+                data-aos="fade-up"
+                placeholder=" Search Job | Search Employer "
+              />
+            </div>
+              <div class="form-group col-md-2">
+              <button class="btn btn-main" onclick="openPopup()" >Find Job</button>
+            </div>
+
+      </div>
+      </div>
+    </section>
+
+    <!--how it works-->
+    <section id="services" class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 section-intro text-center" data-aos="fade-up">
+            <h1>How It Works</h1>
+            <div class="divider"></div>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered<br />
+              alteration in some form, by injected humour, or randomised words
+              which don't look even slightly
+            </p>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4" data-aos="zoom-in">
+            <div class="service">
+              <div class="service-img">
+                <img src="img/image_1.jpg" alt="" />
+                <div class="icon"><i class="icon-browser"></i></div>
+              </div>
+              <h5 class="mt-5 pt-4">Creat Account</h5>
+              <p>
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form
+              </p>
+              <div class="text-center">
+                <button class="btn btn-main " onclick="openPopup()" >Learn More</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="zoom-in">
+            <div class="service">
+              <div class="service-img">
+                <img src="img/image_2.jpg" alt="" />
+                <div class="icon"><i class="icon-bargraph"></i></div>
+              </div>
+              <h5 class="mt-5 pt-4">Apply For Your Dream Job </h5>
+              <p>
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form
+              </p>
+              <div class="text-center">
+                <button class="btn btn-main" onclick="openPopup()">Learn More</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="zoom-in">
+            <div class="service">
+              <div class="service-img">
+                <img src="img/image_3.jpg" alt="" />
+                <div class="icon"><i class="icon-camera"></i></div>
+              </div>
+              <h5 class="mt-5 pt-4">Get Your Result</h5>
+              <p>
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form
+              </p>
+              <div class="text-center">
+                <button class="btn btn-main" onclick="openPopup()" >Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--about-->
+    <section
+      id="about"
+      class="bg-cover"
+      style="background-image: url(img/cover_3.jpg)"
+    >
+      <div class="overlay"></div>
+      <div class="container text-white text-center">
+        <div class="row">
+          <div class="col-12 section-intro text-center" data-aos="fade-up">
+            <h1>– Steve Jobs</h1>
+            <div class="divider"></div>
+            <p>
+              “Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work.<br> the only way to do great work is to love what you do. If you haven’t found it yet, keep looking. Don’t settle. As with all matters of the heart, you’ll know when you find it.”
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--features-->
+    <section id="features" class="text-center">
+      <div class="container">
+        <div class="row">
+            <div class="col-12 section-intro text-center" data-aos="fade-up">
+                <h1>Our Partners</h1>
+                <div class="divider"></div>
+                <p>
+                  There are many variations of passages of Lorem Ipsum available,
+                  but the majority have suffered<br />
+                  alteration in some form, by injected humour, or randomised words
+                  which don't look even slightly
+                </p>
+              </div>
+        </div>
+        <div class="row gx-4 gy-5">
+          <div class="col-md-4 feature" data-aos="fade-up">
+              <img src="img/facebook.png" alt="" class="img1">
+            <h5 class="mt-4 mb-3">Feature Title</h5>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form
+            </p>
+          </div>
+          <div class="col-md-4 feature" data-aos="fade-up">
+            <img src="img/google.png" alt="" class="img1">
+            <h5 class="mt-4 mb-3">Feature Title</h5>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form
+            </p>
+          </div>
+          <div class="col-md-4 feature" data-aos="fade-up">
+            <img src="img/instagram.png" alt="" class="img1">
+            <h5 class="mt-4 mb-3">Feature Title</h5>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form
+            </p>
+          </div>
+          <div class="col-md-4 feature" data-aos="fade-up">
+            <img src="img/uber.png" alt="" class="img1">
+            <h5 class="mt-4 mb-3">Feature Title</h5>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form
+            </p>
+          </div>
+          <div class="col-md-4 feature" data-aos="fade-up">
+            <img src="img/twitter.png" alt="" class="img1">
+            <h5 class="mt-4 mb-3">Feature Title</h5>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form
+            </p>
+          </div>
+          <div class="col-md-4 feature" data-aos="fade-up">
+            <img src="img/youtube.png" alt="" class="img1">
+            <h5 class="mt-4 mb-3">Feature Title</h5>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form
+            </p>
+          </div>
+        </div>
+      </div>
+
+      
+
+    </section>
+      
+    
+
+    <!--counters-->
+    <section class="bg-cover" style="background-image: url(img/cover_2.jpg)">
+      <div class="overlay"></div>
+      <div class="container text-white text-center">
+        <div class="row gy-4" data-aos="fade-up">
+          <div class="col-md-3">
+            <i class="icon-trophy h1"></i>
+            <h1 class="mt-3 mb-2">45,00</h1>
+            <p>Awards Won</p>
+          </div>
+          <div class="col-md-3">
+            <i class='icon-envelope h1'></i>
+            <h1 class="mt-3 mb-2">120k</h1>
+            <p>Jobs Offer</p>
+          </div>
+          <div class="col-md-3">
+            <i class="icon-happy h1"></i>
+            <h1 class="mt-3 mb-2">30M+</h1>
+            <p>Happy Clients</p>
+          </div>
+          <div class="col-md-3">
+            <i class='icon-desktop h1'></i>
+            <h1 class="mt-3 mb-2">4,005</h1>
+            <p>Employeer</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--reviews-->
+    <section id="reviews" class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 section-intro text-center">
+            <h1>Our Testimonials</h1>
+            <div class="divider"></div>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered<br />
+              alteration in some form, by injected humour, or randomised words
+              which don't look even slightly
+            </p>
+          </div>
+        </div>
+        <div class="row g-4 text-start">
+          <div class="col-md-4" data-aos="fade-up">
+            <div class="review p-4">
+              <div class="person">
+                <img src="img/avatar_1.jpg" alt="" />
+                <div class="text ms-3">
+                  <h6 class="mb-0">John Walker</h6>
+                  <small>Google</small>
+                </div>
+              </div>
+              <p class="pt-4">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected
+              </p>
+              <div class="stars">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4" data-aos="fade-up">
+            <div class="review p-4">
+              <div class="person">
+                <img src="img/avatar_2.jpg" alt="" />
+                <div class="text ms-3">
+                  <h6 class="mb-0">John Walker</h6>
+                  <small>Google</small>
+                </div>
+              </div>
+              <p class="pt-4">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected
+              </p>
+              <div class="stars">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4" data-aos="fade-up">
+            <div class="review p-4">
+              <div class="person">
+                <img src="img/avatar_3.jpg" alt="" />
+                <div class="text ms-3">
+                  <h6 class="mb-0">John Walker</h6>
+                  <small>Google</small>
+                </div>
+              </div>
+              <p class="pt-4">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected
+              </p>
+              <div class="stars">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4" data-aos="fade-up">
+            <div class="review p-4">
+              <div class="person">
+                <img src="img/avatar_2.jpg" alt="" />
+                <div class="text ms-3">
+                  <h6 class="mb-0">John Walker</h6>
+                  <small>Google</small>
+                </div>
+              </div>
+              <p class="pt-4">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected
+              </p>
+              <div class="stars">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4" data-aos="fade-up">
+            <div class="review p-4">
+              <div class="person">
+                <img src="img/avatar_1.jpg" alt="" />
+                <div class="text ms-3">
+                  <h6 class="mb-0">John Walker</h6>
+                  <small>Google</small>
+                </div>
+              </div>
+              <p class="pt-4">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected
+              </p>
+              <div class="stars">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4" data-aos="fade-up">
+            <div class="review p-4">
+              <div class="person">
+                <img src="img/avatar_3.jpg" alt="" />
+                <div class="text ms-3">
+                  <h6 class="mb-0">John Walker</h6>
+                  <small>Google</small>
+                </div>
+              </div>
+              <p class="pt-4">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected
+              </p>
+              <div class="stars">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!--contact-->
+    <footer>
+    <section
+      id="contact"
+      class="bg-cover text-white"
+      style="background-image: url(img/cover_3.jpg)"
+    >
+      <div class="overlay"></div>
+      <div class="container">
+          <div class="col-12 text-center" data-aos="fade-up">
+            <h1>WeJoB.</h1>
+            <div class="divider"></div>
+            <p>
+                Join us & Explore Thousands of Super Jobs<br>
+                Let's Start Something BIG Together
+            </p>
+          </div>
+          <div class="row justify-content-around text-center">
+            <div class="col-md-2">
+                <li class="my-3 text-center list-unstyled" > <h5>Useful Links </h5></li>
+                <ul class="list-unstyled d-flex justify-content-center">
+                <div class="anni">
+                  <li><a href="#home" class="text-decoration-none text-center text-light "> Home</a></li>
+                  <li><a href="#services" class="text-decoration-none text-center text-light"> How it Works</a></li>
+                  <li><a href="#features" class="text-decoration-none text-center text-light"> Our Partners</a></li>
+                </div>
+                </ul>
+              
+            </div>
+              <div class="col-md-2">
+                <li class="my-3 text-center list-unstyled" > <h5>Follow Us</h5> </li>
+                  <ul class="list-unstyled d-flex justify-content-center">
+                  <li><a href="#" class="text-white"><i class="fa-brands fa-facebook-f me-3 fa-lx"></i></a></li>
+                  <li><a href="#" class="text-white"><i class="fa-brands fa-twitter me-3 fa-lx"></i></a></li>
+                  <li><a href="#" class="text-white"> <i class="fa-brands fa-linkedin me-3 fa-lx "></a></i></li>
+                  <li><a href="#" class="text-white"> <i class="fa-brands fa-youtube me-3 fa-lx "></a></i></li>
+                  </ul>
+              </div>
+              <div class="row">
+                  <p class="mb-0">Copyright © 2023. Designed By Yassmine and Dhouha</p>
+        </div>
+      </div>
+        </div>
+    </section>
+    </footer>
+
+    
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/app.js"></script>
+  
+  </body>
+</html>
